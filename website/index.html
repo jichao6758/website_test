@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr" data-config="{&quot;twitter&quot;:0,&quot;plusone&quot;:0,&quot;facebook&quot;:1,&quot;style&quot;:&quot;blue&quot;}">
+ <head> 
+  <meta charset="utf-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <base href="http://localhost:8080/" /> 
+  <meta name="keywords" content="face tracking, face tracking sdk, ar face tracking, ar, vr, augmented reality sdk, face tracking unity, face tracking plugin, face tracker, glasses try-on" /> 
+  <meta name="description" content="ULSee is revolutionizing the way humans and computers interact using our face tracking technology, we're merging virtual and real worlds in ways never before accomplished. " /> 
+  <meta name="generator" content="Joomla! - Open Source Content Management" /> 
+  <title>首页 - 蛙声科技</title> 
+  <link href="/templates/ot_renkli/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" /> 
+  <link rel="stylesheet" href="/media/mod_languages/css/template.css" type="text/css" /> 
+  <link rel="stylesheet" href="/media/jui/css/chosen.css" type="text/css" /> 
+  <script src="/media/jui/js/jquery.min.js" type="text/javascript"></script> 
+  <script src="/media/jui/js/jquery-noconflict.js" type="text/javascript"></script> 
+  <script src="/media/jui/js/jquery-migrate.min.js" type="text/javascript"></script> 
+  <script src="/media/jui/js/bootstrap.min.js" type="text/javascript"></script> 
+  <script src="/media/jui/js/chosen.jquery.min.js" type="text/javascript"></script> 
+  <!--script type="text/javascript">
+        jQuery(function($){
+        });
+
+        jQuery(document).ready(function (){
+         jQuery('.advancedSelect').chosen({"disable_search_threshold":10,"search_contains":true,"allow_single_deselect":true,"placeholder_text_multiple":"Type or select some options","placeholder_text_single":"\u8bf7\u9009\u62e9\u4e00\u9879","no_results_text":"\u6ca1\u6709\u5339\u914d\u7684\u7ed3\u679c"});
+         var li_1=document.createElement("li");
+         li_1.setAttribute("class","newLi");
+         var a = document.createElement("a");
+         a.href="http://localhost:9999/FTP/myfile.rar ";
+         a.innerText="我的文档";
+         li_1.appendChild(a)
+         document.getElementById("nav_just_test").appendChild(li_1)
+         alert("test");
+
+     });
+
+ </script!--> 
+  <link rel="apple-touch-icon-precomposed" href="/templates/ot_renkli/apple_touch_icon.png" /> 
+  <link rel="stylesheet" href="/templates/ot_renkli/styles/blue/css/bootstrap.css" /> 
+  <link rel="stylesheet" href="/templates/ot_renkli/styles/blue/css/theme.css" /> 
+  <link rel="stylesheet" href="/templates/ot_renkli/css/custom.css" /> 
+  <script src="/templates/ot_renkli/warp/vendor/uikit/js/uikit.js"></script> 
+  <script src="/templates/ot_renkli/warp/vendor/uikit/js/components/autocomplete.js"></script> 
+  <script src="/templates/ot_renkli/warp/vendor/uikit/js/components/search.js"></script> 
+  <script src="/templates/ot_renkli/warp/vendor/uikit/js/components/tooltip.js"></script> 
+  <script src="/templates/ot_renkli/warp/vendor/uikit/js/components/lightbox.js"></script> 
+  <script src="/templates/ot_renkli/warp/vendor/uikit/js/components/accordion.js"></script> 
+  <script src="/templates/ot_renkli/warp/vendor/uikit/js/components/sticky.js"></script> 
+  <script src="/templates/ot_renkli/warp/js/social.js"></script> 
+  <!--script src="/templates/ot_renkli/js/theme.js"></script!--> 
+ </head> 
+ <body class="tm-isblog"> 
+  <!--—[if gte IE 9]--> 
+  <style>
+    .uk-animation-slide-top {display:block!important;opacity:1!important} /* uikit scrollspy ie9 fix */
+    .uk-animation-slide-bottom {display:block!important;opacity:1!important} /* uikit scrollspy ie9 fix */
+    .uk-animation-slide-right {display:block!important;opacity:1!important} /* uikit scrollspy ie9 fix */
+    .uk-animation-slide-left {display:block!important;opacity:1!important} /* uikit scrollspy ie9 fix */
+    .uk-animation-fade {display:block!important;opacity:1!important} /* uikit scrollspy ie9 fix */
+    .uk-animation-scale-up {display:block!important;opacity:1!important} /* uikit scrollspy ie9 fix */
+    .uk-animation-scale-down {display:block!important;opacity:1!important} /* uikit scrollspy ie9 fix */
+</style> 
+  <!--[endif]—--> 
+  <div class="tm-headerbar uk-clearfix" data-uk-sticky="{clsactive: 'nav-bg-active', top: -200, animation: 'uk-animation-slide-top'}"> 
+   <div class="uk-container uk-container-center"> 
+    <div class="tm-navbar"> 
+     <a class="tm-logo uk-hidden-small" href="https://ulsee.com"> <p><img src="/images/all_img_logo_ulsee_2.png" alt="" width="115" /></p></a> 
+     <nav class="uk-navbar uk-float-right"> 
+      <ul class="uk-navbar-nav uk-visible-large" id="nav_just_test"> 
+       <li class="uk-active"> <a href="/index">首页</a> </li> 
+       <li> <a href="/company-zhc">公司介绍</a> </li> 
+       <li><a href="/technology-zhc">技术简介</a> </li> 
+       <li class="uk-parent" data-uk-dropdown="{preventflip:'y'}" aria-haspopup="true" aria-expanded="false"> <a href="#">产品</a> 
+        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1"> 
+         <div class="uk-grid uk-dropdown-grid"> 
+          <div class="uk-width-1-1"> 
+           <ul class="uk-nav uk-nav-navbar"> 
+            <li> <a href="/product-zhc/activate_sdk">唤醒SDK</a> </li> 
+            <li> <a href="/product-zhc/sdk_dsp">前端SDK+硬件DSP</a> </li> 
+           </ul> 
+          </div> 
+         </div> 
+        </div> </li> 
+       <li> <a href="/application-zhc">应用</a> </li> 
+       <li> <a href="/contact-us-zhc">联络我们</a> </li> 
+      </ul> 
+     </nav> 
+     <div class="uk-navbar-content uk-navbar-center uk-visible-small">
+      <a class="tm-logo-small" href="https://ulsee.com"> 
+       <div style="display: block; position: fixed; top: 17px; left: 20px;">
+        <img src="/images/all_img_logo_ulsee_2.png" alt="" width="100" />
+       </div></a>
+     </div> 
+     <a href="#offcanvas" class="uk-navbar-toggle uk-hidden-large" data-uk-offcanvas=""></a> 
+    </div> 
+   </div> 
+  </div> 
+  <div id="tm-feature-a" class="tm-block-default tm-block"> 
+   <div class="uk-container uk-container-center"> 
+    <section class="tm-feature-a uk-grid" data-uk-grid-match="{target:'&gt; div &gt; .uk-panel'}" data-uk-grid-margin=""> 
+     <div class="uk-width-1-1">
+      <div class="uk-panel"> 
+       <div class="uk-width-medium-1-2"> 
+        <p data-uk-scrollspy="{cls:'uk-animation-slide-top', delay: 300}"><span style="color: #72c5db; font-family: Roboto; text-decorate: none; font-size: 50px; line-height: 72px; font-weight: 400;">听你的声音<br />懂你的心</span></p> 
+        <p class="uk-article-lead" style="color: #757575;" data-uk-scrollspy="{cls:'uk-animation-slide-top', delay: 400}">蛙声科技，革命性的“一声唤醒”语音交互方式。专注于低功耗、复杂场景的高精度激活，为用户提供管家式的贴心服务。</p> 
+       </div>
+      </div>
+     </div> 
+    </section> 
+   </div> 
+  </div> 
+  <!--div id="tm-feature-b" class="tm-block-default tm-block"> 
+   <div class="uk-container uk-container-center"> 
+    <section class="tm-feature-b uk-grid" data-uk-grid-match="{target:'&gt; div &gt; .uk-panel'}" data-uk-grid-margin=""> 
+     <div class="uk-width-1-1">
+      <div class="uk-panel"> 
+       <div class="uk-slidenav-position" data-uk-slideshow="{animation:'scroll', duration:500, autoplayInterval:5000, pauseOnHover:true, autoplay:true}"> 
+        <ul class="uk-slideshow"> 
+         <li> 
+          <div class="uk-grid uk-flex uk-flex-middle" data-uk-grid-margin=""> 
+           <div class="uk-width-medium-1-2 content uk-text-right"> 
+            <div class="introtext"> 
+             <h2 style="font-size: 26px; text-align:left; margin-top:40px;">ULSee插件在Unity正式上线</h2> 
+             <p class="uk-article-lead uk-text-muted" style="text-align:left;">快来瞧瞧！我们的脸部跟踪插件在Unity正式上线了！欢迎加入我们一起创造奇幻无比的虚拟体验吧。 </p> 
+             <p style="text-align:left; margin-bottom:50px;"><a class="uk-button-primary uk-button-large uk-button" href="https://ulsee.com/en/blog/9-news/80-ulsee-inc-launches-unity-3d-plugin" target="_blank"> View More</a></p> 
+            </div> 
+           </div> 
+           <div class="uk-width-medium-1-2"> 
+            <img class="slideshow-img" src="https://ulsee.com/images/blog_UnityPlugin.png" /> 
+           </div> 
+          </div> </li> 
+         <li> 
+          <div class="uk-grid uk-flex uk-flex-middle" data-uk-grid-margin=""> 
+           <div class="uk-width-medium-1-2 content uk-text-right"> 
+            <div class="introtext"> 
+             <h2 style="font-size: 26px; text-align:left; margin-top:40px;">恭喜ULSee<br />获得「2016钱塘之星创新创业大赛」首奖！</h2> 
+             <p class="uk-article-lead uk-text-muted" style="text-align:left;">“钱塘之星”大赛总决赛的舞台迎来了领军人才组的11个参赛项目，这些项目的创始人除了有来自北京、上海等国内优秀人才外，更有硅谷、英国、法国等大洋彼岸的科技人才。由海归创客杨恒带来的“ULSee人脸追踪及辨识技术”拿下首奖，更是获得了南存辉给出的2亿美金高额估值。 </p> 
+             <p style="text-align:left; margin-bottom:50px;"><a class="uk-button-primary uk-button-large uk-button" href="https://ulsee.com/en/blog/9-news/77-congratulation-ulsee-won-the-champion-of-2016-qiantang-star-innovation-and-entrepreneurship-competition" target="_blank"> View More</a></p> 
+            </div> 
+           </div> 
+           <div class="uk-width-medium-1-2"> 
+            <img class="slideshow-img" src="https://ulsee.com/images/blog_Qiantang_Star.png" /> 
+           </div> 
+          </div> </li> 
+         <li> 
+          <div class="uk-grid uk-flex uk-flex-middle" data-uk-grid-margin=""> 
+           <div class="uk-width-medium-1-2 content uk-text-right"> 
+            <div class="introtext"> 
+             <h2 style="font-size: 26px; text-align:left; margin-top:40px;">恭喜我们的合作伙伴：LINE于今日IPO</h2> 
+             <p class="uk-article-lead uk-text-muted" style="text-align:left;">日本通讯软件公司LINE于今天在纽约股市(NYSE)公开上市，是今年(2016)为止最大的IPO科技公司。LINE是一个在亚洲使用广泛的通讯平台，每月拥有平均2亿的活跃用户。</p> 
+             <p style="text-align:left; margin-bottom:50px;"><a class="uk-button-primary uk-button-large uk-button" href="https://ulsee.com/en/blog/9-news/70-congratulations-to-our-technical-partner-line" target="_blank"> View More</a></p> 
+            </div> 
+           </div> 
+           <div class="uk-width-medium-1-2"> 
+            <img class="slideshow-img" src="https://ulsee.com/images/optimum/blog_line_2.png" /> 
+           </div> 
+          </div> </li> 
+         <li> 
+          <div class="uk-grid uk-flex uk-flex-middle" data-uk-grid-margin=""> 
+           <div class="uk-width-medium-1-2 content uk-text-right"> 
+            <div class="introtext"> 
+             <h2 style="font-size: 26px; text-align:left; margin-top:40px;">AR 技术与迪士尼动画</h2> 
+             <h4 style="text-align:left;">爱丽丝梦游仙境: 镜中奇遇记</h4> 
+             <p class="uk-article-lead uk-text-muted" style="text-align:left;">本技术在D23 EXPO 2015 应用「扩增实镜(AR)」提供全新的感官体验。唤醒SDK技术由ULSee所提供，透过实时的3D元件与虚拟化妆效果，人们可以从镜中看到如电影角色中可爱的自己。</p> 
+             <p style="text-align:left; margin-bottom:90px;"><a class="uk-button-primary uk-button-large uk-button" href="https://ulsee.com/en/blog/9-news/59-ar-magic-in-alice-wonderland" target="_blank"> View More</a></p> 
+            </div> 
+           </div> 
+           <div class="uk-width-medium-1-2"> 
+            <img class="slideshow-img" src="https://ulsee.com/images/Disneyexpo_.jpg" /> 
+           </div> 
+          </div> </li> 
+         <li> 
+          <div class="uk-grid uk-flex uk-flex-middle" data-uk-grid-margin=""> 
+           <div class="uk-width-medium-1-2 content uk-text-right"> 
+            <div class="introtext"> 
+             <h2 style="font-size: 26px; text-align:left; margin-top:40px;">动画镜头进入到LINE Camera</h2> 
+             <p class="uk-article-lead uk-text-muted" style="text-align:left;">ULSee的无标记唤醒SDK技术，实时追踪脸部66个点，充许这些像Line一样的公司，专为他们的LINE Camera APP，去创造有趣和身临其境的产品。用户可以无缝地应用千万的特殊效果，贴纸和面罩。我们可以帮助您创建什么样的产品呢？</p> 
+             <p style="text-align:left; margin-bottom:50px;"><a class="uk-button-primary uk-button-large uk-button" href="https://ulsee.com/en/blog/9-news/67-animated-lenses-come-to-the-line-camera-app" target="_blank"> View More</a></p> 
+            </div> 
+           </div> 
+           <div class="uk-width-medium-1-2"> 
+            <img class="slideshow-img" src="https://ulsee.com/images/linecamera.jpg" /> 
+           </div> 
+          </div> </li> 
+         <li> 
+          <div class="uk-grid uk-flex uk-flex-middle" data-uk-grid-margin=""> 
+           <div class="uk-width-medium-1-2 content uk-text-right"> 
+            <div class="introtext"> 
+             <h2 style="font-size: 26px; text-align:left; margin-top:40px;">Savetrack</h2> 
+             <p class="uk-article-lead uk-text-muted" style="text-align:left;">多亏了ULSee突破性的人脸跟踪技术，如Savetrack™公司正在进行更安全的方式，通过检测驾驶员脸部姿势，表情和眼球运动来监测疲劳和注意力分散。信息将上传至云端，进而监测和分析。</p> 
+             <p style="text-align:left; margin-bottom:50px;"><a class="uk-button-primary uk-button-large uk-button" href="https://ulsee.com/en/blog/9-news/69-savetrack" target="_blank"> View More</a></p> 
+            </div> 
+           </div> 
+           <div class="uk-width-medium-1-2"> 
+            <img class="slideshow-img" src="https://ulsee.com/images/savetrack.jpg" /> 
+           </div> 
+          </div> </li> 
+         <li> 
+          <div class="uk-grid uk-flex uk-flex-middle" data-uk-grid-margin=""> 
+           <div class="uk-width-medium-1-2 content uk-text-right"> 
+            <div class="introtext"> 
+             <h2 style="font-size: 26px; text-align:left; margin-top:40px;">Camera360增加流行的功能</h2> 
+             <p class="uk-article-lead uk-text-muted" style="text-align:left;">排名第一的美肌相机 Camera360，采用ULSee技术，为用户提供令人难以置信的工具，包括美化滤镜，贴纸，增强实境的工具。 ULSee帮助企业跟上当前的消费趋势及最新流行。</p> 
+             <p style="text-align:left; margin-bottom:50px;"><a class="uk-button-primary uk-button-large uk-button" href="https://ulsee.com/en/blog/9-news/66-camera360-adds-popular-features" target="_blank"> View More</a></p> 
+            </div> 
+           </div> 
+           <div class="uk-width-medium-1-2"> 
+            <img class="slideshow-img" src="https://ulsee.com/images/camera360.jpg" /> 
+           </div> 
+          </div> </li> 
+        </ul> 
+        <a href="/" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a> 
+        <a href="/" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a> 
+        <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom-right"> 
+         <li data-uk-slideshow-item="0"><a href="/"></a></li> 
+         <li data-uk-slideshow-item="1"><a href="/"></a></li> 
+         <li data-uk-slideshow-item="2"><a href="/"></a></li> 
+         <li data-uk-slideshow-item="3"><a href="/"></a></li> 
+         <li data-uk-slideshow-item="4"><a href="/"></a></li> 
+         <li data-uk-slideshow-item="5"><a href="/"></a></li> 
+         <li data-uk-slideshow-item="6"><a href="/"></a></li> 
+        </ul> 
+       </div> 
+       <script src="/templates/ot_renkli/warp/vendor/uikit/js/components/slideshow.js"></script> 
+      </div>
+     </div> 
+    </section> 
+   </div> 
+  </div!--> 
+  <div id="tm-top-b" class="tm-block-default tm-block"> 
+   <div class="uk-container uk-container-center"> 
+    <section class="tm-top-b uk-grid" data-uk-grid-match="{target:'&gt; div &gt; .uk-panel'}" data-uk-grid-margin=""> 
+     <div class="uk-width-1-1">
+      <div class="uk-panel uk-panel-header title-border-bottom title-center">
+       <h3 class="uk-h1 uk-margin-top-remove"><span>我们的产品</span></h3>
+       <div class="uk-grid ot-blocks tm-block-padding" data-uk-grid-margin="" data-uk-grid-match="{target:'.uk-panel'}"> 
+        <div class="uk-width-medium-2-4"> 
+         <div class="uk-panel" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: true, delay: 300}"> 
+          <img class="grid-img" src="https://ulsee.com/images/optimum/blocks/slide_img_tracker2.png" /> 
+         </div> 
+        </div> 
+        <div class="uk-width-medium-2-4"> 
+         <div class="uk-panel uk-flex uk-flex-middle uk-flex-space-between"> 
+          <div data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: true, delay: 600}"> 
+           <div class="uk-width-2-3">
+            <h2 class="uk-text-primary"><span> 唤醒激活软件SDK</span></h2>
+           </div> 
+           <div>
+            <p>蛙声科技提供最优秀的激活软件的SDK，借助原设备的少量计算资源，即可达到高精度的唤醒激活 </p>
+           </div> 
+           <!-- read more --> 
+           <div class="uk-margin">
+            <a class="uk-button uk-button-primary" href="/product-zhc/activate_sdk" role="button">更多</a>
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="uk-grid ot-blocks tm-block-padding" data-uk-grid-margin="" data-uk-grid-match="{target:'.uk-panel'}"> 
+        <div class="uk-width-medium-2-4"> 
+         <div class="uk-panel uk-flex uk-flex-middle uk-flex-space-between"> 
+          <div data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: true, delay: 600}"> 
+           <div class="uk-width-2-3 uk-push-1-3">
+            <h2 class="uk-text-primary uk-text-right"><span> 前端SDK+硬件DSP系统</span></h2>
+           </div> 
+           <div class="uk-text-right">
+            <p>最优秀的前端SDK+硬件DSP软硬结合的一体系统解决方案 </p>
+           </div> 
+           <!-- read more --> 
+           <div class="uk-margin uk-text-right">
+            <a class="uk-button uk-button-primary" href="/product-zhc/sdk_dsp" role="button">更多</a>
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="uk-width-medium-2-4"> 
+         <div class="uk-panel" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: true, delay: 900}"> 
+          <img class="grid-img" src="https://ulsee.com/images/optimum/blocks/slide_img_vto.png" /> 
+         </div> 
+        </div> 
+       </div> 
+       <!--div class="uk-grid ot-blocks tm-block-padding" data-uk-grid-margin="" data-uk-grid-match="{target:'.uk-panel'}"> 
+        <div class="uk-width-medium-2-4"> 
+         <div class="uk-panel" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: true, delay: 300}"> 
+          <img class="grid-img" src="https://ulsee.com/images/optimum/blocks/slide_img_ipad_sticker.png" /> 
+         </div> 
+        </div> 
+        <div class="uk-width-medium-2-4"> 
+         <div class="uk-panel uk-flex uk-flex-middle uk-flex-space-between"> 
+          <div data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: true, delay: 600}"> 
+           <div class="uk-width-2-3">
+            <h2 class="uk-text-primary"><span> 惊艳的虚拟变妆</span></h2>
+           </div> 
+           <div>
+            <p>我们结合了唤醒SDK与变脸动画技术。从饰品虚拟试戴到变成名人的长相，ULSee都能让您彻底改头换面。 </p>
+           </div> 
+           
+           <div class="uk-margin">
+            <a class="uk-button uk-button-primary" href="https://webdev.ulsee.com/www/index.php?option=com_content&amp;view=article&amp;id=57&amp;Itemid=246&amp;lang=zhcn" role="button">更多</a>
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="uk-grid ot-blocks tm-block-padding" data-uk-grid-margin="" data-uk-grid-match="{target:'.uk-panel'}"> 
+        <div class="uk-width-medium-2-4"> 
+         <div class="uk-panel uk-flex uk-flex-middle uk-flex-space-between"> 
+          <div data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: true, delay: 600}"> 
+           <div class="uk-width-2-3 uk-push-1-3">
+            <h2 class="uk-text-primary uk-text-right"><span> 深度学习技术</span></h2>
+           </div> 
+           <div class="uk-text-right">
+            <p>ULSee透过精密的演算法、大数据与计算机运算进行实时的机器学习，进一步提升唤醒SDK的准确率与推动人工智能的发展。 </p>
+           </div> 
+   
+           <div class="uk-margin uk-text-right">
+            <a class="uk-button uk-button-primary" href="https://webdev.ulsee.com/www/index.php?option=com_content&amp;view=featured&amp;Itemid=233&amp;lang=zhcn" role="button">更多</a>
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="uk-width-medium-2-4"> 
+         <div class="uk-panel" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: true, delay: 900}"> 
+          <img class="grid-img" src="https://ulsee.com/images/optimum/blocks/slide_img_DCNN2.png" /> 
+         </div> 
+        </div> 
+       </div!--> 
+      </div>
+     </div> 
+    </section> 
+   </div> 
+  </div> 
+  <div id="tm-parallax" class="tm-block-default tm-block"> 
+   <div class="uk-container uk-container-center"> 
+    <section class="tm-parallax uk-grid" data-uk-grid-match="{target:'&gt; div &gt; .uk-panel'}" data-uk-grid-margin=""> 
+     <div class="uk-width-1-1">
+      <div class="uk-panel"> 
+       <div class="uk-animation-delay" data-uk-scrollspy="{cls:'uk-animation-scale-up', delay:600}"> 
+        <h2 style="text-align: center;">加入我们</h2> 
+        <p class="uk-article-lead" style="text-align: center;"><a class="uk-button-primary uk-button-large uk-button" href="/zhcn/contact-us-zhc"> 联系 </a></p> 
+        <p class="uk-text-medium" style="text-align: center; font-size: 16px;">一起成为我们的伙伴</p> 
+       </div>
+      </div>
+     </div> 
+    </section> 
+   </div> 
+  </div> 
+  <div id="tm-middle" class="tm-middle tm-block"> 
+   <div class="uk-container uk-container-center"> 
+    <div class="uk-grid" data-uk-grid-match="" data-uk-grid-margin=""> 
+     <div class="tm-main uk-width-medium-1-1"> 
+      <main id="tm-content" class="tm-content"> 
+       <div id="system-message-container"> 
+       </div> 
+      </main> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <footer id="tm-footer" class="tm-footer"> 
+   <div class="uk-container uk-container-center"> 
+    <a class="tm-totop-scroller" data-uk-smooth-scroll="" href="#"></a> 
+   </div> 
+   <div class="uk-panel"> 
+    <div class="uk-margin">
+     <img src="/images/all_img_logo_ulsee.png" alt="" width="110" />
+    </div> 
+    <p>版权所有 &copy; 2017 ULSee Inc.</p>
+   </div>  
+  </footer> 
+  <div id="offcanvas" class="uk-offcanvas"> 
+   <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+    <ul class="uk-nav uk-nav-offcanvas">
+     <li class="uk-active"><a href="/index">首页</a></li>
+     <li><a href="/company-zhc">公司介绍</a></li>
+     <li><a href="/technology-zhc">技术简介</a></li>
+     <li class="uk-parent"><a href="#">产品</a> 
+      <ul class="uk-nav-sub">
+       <li><a href="/product-zhc/activate_sdk">唤醒SDK</a></li>
+       <li><a href="/product-zhc/sdk_dsp">前端SDK+硬件DSP</a></li>
+      </ul></li>
+     <li><a href="/application-zhc">应用</a></li>
+     <li><a href="/contact-us-zhc">联络我们</a></li>
+    </ul>
+   </div> 
+  </div>  
+ </body>
+</html>
