@@ -7316,7 +7316,7 @@ a.uk-thumbnail:focus {
  ========================================================================== */
 .uk-dropdown-navbar {
   margin-top: 10px;
-  background: #72c5db;
+  background: #62b12e;
   color: #ffffff;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -9978,7 +9978,7 @@ html {
   background-attachment: fixed;
   background-size: cover;
   /*padding: 200px 0 !important;*/
-  padding: 50px 0 !important;
+  padding: 120px 0 !important;
   color: #ffffff;
   position: relative;
 }
