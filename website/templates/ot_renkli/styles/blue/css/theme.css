@@ -9,7 +9,7 @@
  */
 html {
   /* 1 */
-  font: normal 14px / 20px 'Roboto';
+  font: normal 14px / 32px 'Roboto';
   /* 2 */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -233,7 +233,7 @@ h1,
 }
 h2,
 .uk-h2 {
-  font-size: 32px;
+  font-size: 36px;
   line-height: 40px;
 }
 h3,
@@ -3588,7 +3588,11 @@ select.uk-form-width-mini {
  * Modifier: `uk-button-primary`
  */
 .uk-button-primary {
-  background-color: #72c5db;
+  background-color: #62b12e;
+  color: #eeeeee;
+}
+#index_connet_button{
+  background-color: #043045;
   color: #eeeeee;
 }
 /* Hover */
@@ -7717,7 +7721,7 @@ a.uk-thumbnail:focus {
   color: #999999 !important;
 }
 .uk-text-primary {
-  color: #72c5db !important;
+  color: #043045 !important;
 }
 .uk-text-success {
   color: #659f13 !important;
@@ -9901,7 +9905,7 @@ html {
  * Feature-a
  */
 #tm-feature-a {
-  background-image: url("../../../images/bg.jpg");
+  background-image: url("../../../images/bg.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   padding: 100px 0;
@@ -9968,11 +9972,13 @@ html {
  * Parallax
  */
 #tm-parallax {
-  background-image: url("../../../images/parallax.jpg");
+  /*background-image: url("../../../images/parallax.jpg");*/
   background-position: 50% 50%;
+  background-color:#9eafb7;
   background-attachment: fixed;
   background-size: cover;
-  padding: 200px 0 !important;
+  /*padding: 200px 0 !important;*/
+  padding: 50px 0 !important;
   color: #ffffff;
   position: relative;
 }
