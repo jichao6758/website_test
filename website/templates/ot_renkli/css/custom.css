@@ -13,7 +13,7 @@
 }
 
 .uk-navbar-nav > li > a {
-  color:#727272;
+  color:#666666;
 }
 
 .uk-navbar-nav > li:hover > a,
@@ -33,7 +33,7 @@
 /* Active */
 .uk-navbar-nav > li.uk-active > a {
   background-color: rgba(255, 255, 255, 0.1);
-  color:#00b1ce;
+  color:#62b12e;
   border-top: 1px solid rgba(255, 255, 255, 1);
 }
 
