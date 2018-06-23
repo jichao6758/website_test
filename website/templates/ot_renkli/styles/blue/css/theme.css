@@ -3594,6 +3594,11 @@ select.uk-form-width-mini {
 #index_connet_button{
   background-color: #043045;
   color: #eeeeee;
+  width: 100px;
+  height:44px;
+  text-align: center;
+  font-size:18px;
+      line-height:26px;
 }
 /* Hover */
 .uk-button-primary:hover,
@@ -9905,7 +9910,7 @@ html {
  * Feature-a
  */
 #tm-feature-a {
-  background-image: url("../../../images/bg.jpg");
+  background-image: url("../../../images/bg-3.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   padding: 100px 0;
@@ -9974,7 +9979,7 @@ html {
 #tm-parallax {
   /*background-image: url("../../../images/parallax.jpg");*/
   background-position: 50% 50%;
-  background-color:#9eafb7;
+  background-color:#ffffff;
   background-attachment: fixed;
   background-size: cover;
   /*padding: 200px 0 !important;*/
@@ -10050,7 +10055,7 @@ article.uk-article article.uk-article,
 .tm-footer {
   position: relative;
   text-align: center;
-  background: #72c5db;
+  background: #9eafb7; 
   padding: 25px 0;
   color: #ffffff;
 }
