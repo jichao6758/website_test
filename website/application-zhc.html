@@ -53,42 +53,41 @@
     .uk-animation-scale-down {display:block!important;opacity:1!important} /* uikit scrollspy ie9 fix */
   </style> 
   <!--[endif]—--> 
-  <div class="uk-sticky-placeholder" style="height: 95px; margin: 0px 0px 35px;">
-   <div class="tm-headerbar uk-clearfix nav-bg" data-uk-sticky="{clsactive: 'nav-bg-active', top: -200, animation: 'uk-animation-slide-top'}" style="margin: 0px;"> 
-    <div class="uk-container uk-container-center"> 
-     <div class="tm-navbar"> 
-      <a class="tm-logo uk-hidden-small" href="/"> <p><img src="/images/all_img_logo_ulsee_2.png" alt="" width="115" /></p></a> 
-      <nav class="uk-navbar uk-float-right"> 
-       <ul class="uk-navbar-nav uk-visible-large">
-        <li><a href="/index">首页</a></li>
-        <li><a href="/company-zhc">公司介绍</a></li>
-        <li><a href="/technology-zhc">技术简介</a></li>
-        <li class="uk-parent" data-uk-dropdown="{preventflip:'y'}" aria-haspopup="true" aria-expanded="false"><a href="/application-zhc#">产品</a> 
-         <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
-          <div class="uk-grid uk-dropdown-grid">
-           <div class="uk-width-1-1">
-            <ul class="uk-nav uk-nav-navbar">
-             <li> <a href="/product-zhc/activate_sdk">唤醒SDK</a> </li> 
-             <li> <a href="/product-zhc/sdk_dsp">前端SDK+硬件DSP</a> </li>
-            </ul>
-           </div>
-          </div>
-         </div></li>
-        <li class="uk-active"><a href="/application-zhc">应用</a></li>
-        <li><a href="/contact-us-zhc">联络我们</a></li>
-       </ul> 
-      </nav> 
-      <div class="uk-navbar-content uk-navbar-center uk-visible-small">
-       <a class="tm-logo-small" href="/"> 
-        <div style="display: block; position: fixed; top: 17px; left: 20px;">
-         <img src="/images/all_img_logo_ulsee_2.png" alt="" width="100" />
-        </div></a>
-      </div> 
-      <a href="#offcanvas" class="uk-navbar-toggle uk-hidden-large" data-uk-offcanvas=""></a> 
+  <div class="tm-headerbar uk-clearfix" data-uk-sticky="{clsactive: 'nav-bg-active', top: -200, animation: 'uk-animation-slide-top'}"> 
+   <div class="uk-container uk-container-center"> 
+    <div class="tm-navbar"> 
+     <a class="tm-logo uk-hidden-small" href="/"> <p><img src="/images/logo.png" alt="" width="115" /></p></a> 
+     <nav class="uk-navbar uk-float-right"> 
+      <ul class="uk-navbar-nav uk-visible-large" id="nav_just_test"> 
+       <li class="uk-active"> <a href="/index">首页</a> </li> 
+       <li> <a href="/company-zhc">公司介绍</a> </li> 
+       <li><a href="/technology-zhc">技术简介</a> </li> 
+       <li class="uk-parent" data-uk-dropdown="{preventflip:'y'}" aria-haspopup="true" aria-expanded="false"> <a href="#">产品</a> 
+        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1"> 
+         <div class="uk-grid uk-dropdown-grid"> 
+          <div class="uk-width-1-1"> 
+           <ul class="uk-nav uk-nav-navbar"> 
+            <li> <a href="/product-zhc/activate_sdk">唤醒SDK</a> </li> 
+            <li> <a href="/product-zhc/sdk_dsp">前端SDK+硬件DSP</a> </li> 
+            <li> <a href="/product-zhc/sdk_dsp">降噪软硬件模组</a> </li> 
+           </ul> 
+          </div> 
+         </div> 
+        </div> </li> 
+       <li> <a href="/application-zhc">应用</a> </li> 
+       <li> <a href="/contact-us-zhc">联络我们</a> </li> 
+      </ul> 
+     </nav> 
+     <div class="uk-navbar-content uk-navbar-center uk-visible-small">
+      <a class="tm-logo-small" href="/"> 
+       <div style="display: block; position: fixed; top: 17px; left: 20px;">
+        <img src="/images/logo.png" alt="" width="100" />
+       </div></a>
      </div> 
+     <a href="#offcanvas" class="uk-navbar-toggle uk-hidden-large" data-uk-offcanvas=""></a> 
     </div> 
-   </div>
-  </div> 
+   </div> 
+  </div>
   <div id="tm-feature-b" class="tm-block-default tm-block"> 
    <div class="uk-container uk-container-center"> 
     <section class="tm-feature-b uk-grid" data-uk-grid-match="{target:'&gt; div &gt; .uk-panel'}" data-uk-grid-margin=""> 
@@ -417,15 +416,12 @@
    </div> 
   </div>  
   <footer id="tm-footer" class="tm-footer"> 
-   <div class="uk-container uk-container-center"> 
-    <a class="tm-totop-scroller" data-uk-smooth-scroll="" href="#"></a> 
-    <div class="uk-panel"> 
-     <div class="uk-margin">
-      <img src="/images/all_img_logo_ulsee.png" alt="" width="110" />
-     </div> 
-     <p>版权所有 &copy; 2017 ULSee Inc.</p>
+   <div class="uk-panel"> 
+    <div class="uk-margin">
+     <img src="/images/logo_white.png" alt="" width="110" />
     </div> 
-   </div> 
+    <p>版权所有 &copy; 2018 蛙声科技 Inc.</p>
+   </div>  
   </footer> 
   <div id="offcanvas" class="uk-offcanvas"> 
    <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
