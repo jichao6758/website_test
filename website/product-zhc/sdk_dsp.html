@@ -25,17 +25,6 @@
   <script src="/media/jui/js/jquery-migrate.min.js" type="text/javascript"></script> 
   <script src="/media/jui/js/bootstrap.min.js" type="text/javascript"></script> 
   <script src="/media/jui/js/chosen.jquery.min.js" type="text/javascript"></script> 
-  <script type="text/javascript">
-jQuery(function($){
-
-
-});
-
-        jQuery(document).ready(function (){
-            jQuery('.advancedSelect').chosen({"disable_search_threshold":10,"search_contains":true,"allow_single_deselect":true,"placeholder_text_multiple":"Type or select some options","placeholder_text_single":"\u8bf7\u9009\u62e9\u4e00\u9879","no_results_text":"\u6ca1\u6709\u5339\u914d\u7684\u7ed3\u679c"});
-        });
-    
-    </script> 
   <link rel="apple-touch-icon-precomposed" href="/templates/ot_renkli/apple_touch_icon.png" /> 
   <link rel="stylesheet" href="/templates/ot_renkli/styles/blue/css/bootstrap.css" /> 
   <link rel="stylesheet" href="/templates/ot_renkli/styles/blue/css/theme.css" /> 
@@ -67,10 +56,10 @@ jQuery(function($){
      <a class="tm-logo uk-hidden-small" href="/"> <p><img src="/images/logo.png" alt="" width="115" /></p></a> 
      <nav class="uk-navbar uk-float-right"> 
       <ul class="uk-navbar-nav uk-visible-large" id="nav_just_test"> 
-       <li class="uk-active"> <a href="/index">首页</a> </li> 
+       <li> <a href="/index">首页</a> </li> 
        <li> <a href="/company-zhc">公司介绍</a> </li> 
        <li><a href="/technology-zhc">技术简介</a> </li> 
-       <li class="uk-parent" data-uk-dropdown="{preventflip:'y'}" aria-haspopup="true" aria-expanded="false"> <a href="#">产品</a> 
+       <li class=" uk-active uk-parent" data-uk-dropdown="{preventflip:'y'}" aria-haspopup="true" aria-expanded="false"> <a href="#">产品</a> 
         <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1"> 
          <div class="uk-grid uk-dropdown-grid"> 
           <div class="uk-width-1-1"> 
@@ -135,8 +124,6 @@ jQuery(function($){
     <div class="uk-grid" data-uk-grid-match="" data-uk-grid-margin=""> 
      <div class="tm-main uk-width-medium-1-1 uk-row-first"> 
       <main id="tm-content" class="tm-content"> 
-       <div id="system-message-container"> 
-       </div> 
        <article class="uk-article" style="min-height: 1032px"> 
         <h1 class="uk-article-title"> 技术优势 </h1> 
         <p>&nbsp;</p>  
@@ -202,7 +189,6 @@ jQuery(function($){
           </div> 
          </div> 
  
-        </div> 
         </div> 
        </article> 
       </main> 
