@@ -25,17 +25,6 @@
   <script src="/media/jui/js/jquery-migrate.min.js" type="text/javascript"></script> 
   <script src="/media/jui/js/bootstrap.min.js" type="text/javascript"></script> 
   <script src="/media/jui/js/chosen.jquery.min.js" type="text/javascript"></script> 
-  <script type="text/javascript">
-jQuery(function($){
-
-
-});
-
-        jQuery(document).ready(function (){
-            jQuery('.advancedSelect').chosen({"disable_search_threshold":10,"search_contains":true,"allow_single_deselect":true,"placeholder_text_multiple":"Type or select some options","placeholder_text_single":"\u8bf7\u9009\u62e9\u4e00\u9879","no_results_text":"\u6ca1\u6709\u5339\u914d\u7684\u7ed3\u679c"});
-        });
-    
-    </script> 
   <link rel="apple-touch-icon-precomposed" href="/templates/ot_renkli/apple_touch_icon.png" /> 
   <link rel="stylesheet" href="/templates/ot_renkli/styles/blue/css/bootstrap.css" /> 
   <link rel="stylesheet" href="/templates/ot_renkli/styles/blue/css/theme.css" /> 
@@ -47,7 +36,6 @@ jQuery(function($){
   <script src="/templates/ot_renkli/warp/vendor/uikit/js/components/lightbox.js"></script> 
   <script src="/templates/ot_renkli/warp/vendor/uikit/js/components/accordion.js"></script> 
   <script src="/templates/ot_renkli/warp/vendor/uikit/js/components/sticky.js"></script> 
-  <script src="/templates/ot_renkli/warp/js/social.js"></script> 
   <link type="text/css" rel="stylesheet" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content.css" />
  </head> 
  <body class="tm-isblog"> 
@@ -62,43 +50,42 @@ jQuery(function($){
     .uk-animation-scale-down {display:block!important;opacity:1!important} /* uikit scrollspy ie9 fix */
   </style> 
   <!--[endif]—--> 
-  <div class="uk-sticky-placeholder" style="height: 95px; margin: 0px 0px 35px;">
-   <div class="tm-headerbar uk-clearfix nav-bg" data-uk-sticky="{clsactive: 'nav-bg-active', top: -200, animation: 'uk-animation-slide-top'}" style="margin: 0px;"> 
-    <div class="uk-container uk-container-center"> 
-     <div class="tm-navbar"> 
-      <a class="tm-logo uk-hidden-small" href="/index"> <p><img src="/images/all_img_logo_ulsee_2.png" alt="" width="115" /></p></a> 
-      <nav class="uk-navbar uk-float-right"> 
-       <ul class="uk-navbar-nav uk-visible-large">
-        <li><a href="/index">首页</a></li>
-        <li><a href="/company-zhc">公司介绍</a></li>
-        <li><a href="/technology-zhc">技术简介</a></li>
-        <li class="uk-parent uk-active" data-uk-dropdown="{preventflip:'y'}" aria-haspopup="true" aria-expanded="false"><a href="#">产品</a> 
-         <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1 uk-dropdown-bottom" style="top: 45px; left: 0px;">
-          <div class="uk-grid uk-dropdown-grid">
-           <div class="uk-width-1-1">
-            <ul class="uk-nav uk-nav-navbar">
-             <li> <a href="/product-zhc/activate_sdk">唤醒SDK</a> </li> 
-             <li> <a href="/product-zhc/sdk_dsp">前端SDK+硬件DSP</a> </li>
-            </ul>
-           </div>
-          </div>
-         </div></li>
-        <li><a href="/application-zhc">应用</a></li>
-        <li><a href="/contact-us-zhc">联络我们</a></li>
-       </ul> 
-      </nav> 
-      <div class="uk-navbar-content uk-navbar-center uk-visible-small">
-       <a class="tm-logo-small" href="/index"> 
-        <div style="display: block; position: fixed; top: 17px; left: 20px;">
-         <img src="/images/all_img_logo_ulsee_2.png" alt="" width="100" />
-        </div></a>
-      </div> 
-      <a href="#offcanvas" class="uk-navbar-toggle uk-hidden-large" data-uk-offcanvas=""></a> 
+  <div class="tm-headerbar uk-clearfix" data-uk-sticky="{clsactive: 'nav-bg-active', top: -200, animation: 'uk-animation-slide-top'}"> 
+   <div class="uk-container uk-container-center"> 
+    <div class="tm-navbar"> 
+     <a class="tm-logo uk-hidden-small" href="/"> <p><img src="/images/logo.png" alt="" width="115" /></p></a> 
+     <nav class="uk-navbar uk-float-right"> 
+      <ul class="uk-navbar-nav uk-visible-large" id="nav_just_test"> 
+       <li class="uk-active"> <a href="/index">首页</a> </li> 
+       <li> <a href="/company-zhc">公司介绍</a> </li> 
+       <li><a href="/technology-zhc">技术简介</a> </li> 
+       <li class="uk-parent" data-uk-dropdown="{preventflip:'y'}" aria-haspopup="true" aria-expanded="false"> <a href="#">产品</a> 
+        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1"> 
+         <div class="uk-grid uk-dropdown-grid"> 
+          <div class="uk-width-1-1"> 
+           <ul class="uk-nav uk-nav-navbar"> 
+            <li> <a href="/product-zhc/activate_sdk">唤醒SDK</a> </li> 
+            <li> <a href="/product-zhc/sdk_dsp">前端SDK+硬件DSP</a> </li> 
+            <li> <a href="/product-zhc/sdk_dsp">降噪软硬件模组</a> </li> 
+           </ul> 
+          </div> 
+         </div> 
+        </div> </li> 
+       <li> <a href="/application-zhc">应用</a> </li> 
+       <li> <a href="/contact-us-zhc">联络我们</a> </li> 
+      </ul> 
+     </nav> 
+     <div class="uk-navbar-content uk-navbar-center uk-visible-small"> 
+      <a class="tm-logo-small" href="/"> 
+       <div style="display: block; position: fixed; top: 17px; left: 20px;"> 
+        <img src="/images/logo.png" alt="" width="100" /> 
+       </div></a> 
      </div> 
+     <a href="#offcanvas" class="uk-navbar-toggle uk-hidden-large" data-uk-offcanvas=""></a> 
     </div> 
-   </div>
-  </div> 
-  <div id="tm-feature-b" class="tm-block-default tm-block"> 
+   </div> 
+  </div>
+  <div id="tm-feature-b"  style="margin-top: 80px;padding-top:0px;padding-bottom: 0px"> 
    <div class="uk-container uk-container-center"> 
     <section class="tm-feature-b uk-grid" data-uk-grid-match="{target:'&gt; div &gt; .uk-panel'}" data-uk-grid-margin=""> 
      <div class="uk-width-1-1 uk-row-first">
@@ -107,12 +94,11 @@ jQuery(function($){
        <div class="uk-grid" data-uk-grid-margin=""> 
         <div class="uk-width-medium-1-3 uk-row-first"> 
          <ul class="uk-subnav uk-subnav-line"> 
-          <li class="uk-active"><a href="/product-zhc/activate_sdk"><button class="uk-button uk-button-success">介绍</button></a></li> 
+          <li class="uk-active"><a href="/product-zhc/activate_sdk"><button class="uk-button uk-button-success">展示</button></a></li> 
           <!--li style="padding-top: 8px;"><a href="/product-zhc/face-tracking-demo-zhc"><i class="uk-icon-play">&nbsp;</i>展示</a></li!--> 
          </ul> 
         </div> 
        </div> 
-       <p>&nbsp;</p> 
        <div class="uk-grid" data-uk-grid-margin=""> 
         <div class="uk-width-medium-1-2 uk-row-first"> 
          <div class="uk-panel uk-margin-top"> 
@@ -123,37 +109,29 @@ jQuery(function($){
         </div> 
         <div class="uk-width-medium-1-2"> 
          <div class="uk-slidenav-position">
-          <img src="/images/company_gpic_bg.jpg" alt="" />
+          <img src="/images/img-2.jpg" alt="" />
          </div> 
         </div> 
        </div> 
-       <p>&nbsp;</p>
       </div>
      </div> 
     </section> 
    </div> 
   </div> 
-  <div id="tm-middle" class="tm-middle tm-block"> 
+  <div id="tm-middle" class="tm-middle tm-block" style="margin-top: 80px;margin-bottom: 200px;padding-top:0px;padding-bottom: 0px"> 
    <div class="uk-container uk-container-center"> 
     <div class="uk-grid" data-uk-grid-match="" data-uk-grid-margin=""> 
      <div class="tm-main uk-width-medium-1-1 uk-row-first"> 
-      <main id="tm-content" class="tm-content"> 
-       <div id="system-message-container"> 
-       </div> 
-       <article class="uk-article"> 
+      <main id="tm-content" class="tm-content">  
+       <article class="uk-article" style="min-height: 1032px"> 
         <h1 class="uk-article-title"> 技术优势 </h1> 
         <p>&nbsp;</p> 
-        <p> <script src="/templates/ot_renkli/warp/vendor/uikit/js/components/grid.js"></script> </p>
-        <ul id="ot-grid" class="uk-subnav uk-subnav-pill"> 
-         <li data-uk-filter=""><a class="uk-button uk-button-primary" href="/index"><span class="uk-icon-list"></span></a></li> 
-         <li data-uk-filter=""><a class="uk-button" href="/index"></a></li> 
-        </ul> 
-        <div class="ot-filter" data-uk-grid="{controls: '#ot-grid', gutter: 0, animation: true, duration: 200}" style="position: relative; height: 449.344px;"> 
-         <div class="uk-width-medium-1-2" data-uk-filter="" data-grid-prepared="true" style="position: absolute; box-sizing: border-box; top: 0px; left: 0px; opacity: 1;"> 
-          <div class="uk-panel uk-panel-box" data-uk-scrollspy="{cls:'uk-animation-scale-up', delay:400}"> 
+        <div class="uk-grid"> 
+         <div class="uk-width-medium-1-2" > 
+          <div class="uk-panel uk-panel-box" > 
            <div class="uk-panel-teaser"> 
-            <figure class="uk-overlay uk-overlay-hover "> 
-             <img class="slideset-img uk-overlay-spin" src="/images/activate_sdk/advantage_pic1_FT.jpg" /> 
+            <figure class="uk-overlay"> 
+             <img src="/images/activate_sdk/advantage_pic1_FT.jpg" /> 
              <figcaption class="uk-overlay-panel uk-overlay-bottom uk-overlay-background uk-ignore owl-title"> 
               <h4> <span>独特降噪功能</span> </h4> 
              </figcaption> 
@@ -162,13 +140,13 @@ jQuery(function($){
            <div class="introtext"> 
             <p>专门针对多种复杂噪声进行降噪优化，包括电视机背景噪声，车载非稳态噪声等多种复杂声学场景</p> 
            </div> 
-          </div> 
+          </div>
          </div> 
-         <div class="uk-width-medium-1-2" data-uk-filter="" data-grid-prepared="true" style="position: absolute; box-sizing: border-box; top: 0px; left: 417.5px; opacity: 1;"> 
-          <div class="uk-panel uk-panel-box" data-uk-scrollspy="{cls:'uk-animation-scale-up', delay:400}"> 
+         <div class="uk-width-medium-1-2"> 
+          <div class="uk-panel uk-panel-box" > 
            <div class="uk-panel-teaser"> 
-            <figure class="uk-overlay uk-overlay-hover "> 
-             <img class="slideset-img uk-overlay-spin" src="/images/activate_sdk/advantage_pic3_FT.jpg" /> 
+            <figure class="uk-overlay"> 
+             <img  src="/images/activate_sdk/advantage_pic3_FT.jpg" /> 
              <figcaption class="uk-overlay-panel uk-overlay-bottom uk-overlay-background uk-ignore owl-title"> 
               <h4><span> 低功耗</span> </h4> 
              </figcaption> 
@@ -179,11 +157,11 @@ jQuery(function($){
            </div> 
           </div> 
          </div> 
-         <div class="uk-width-medium-1-2" data-uk-filter="" data-grid-prepared="true" style="position: absolute; box-sizing: border-box; top: 244.141px; left: 0px; opacity: 1;"> 
-          <div class="uk-panel uk-panel-box" data-uk-scrollspy="{cls:'uk-animation-scale-up', delay:400}"> 
+         <div class="uk-width-medium-1-2"> 
+          <div class="uk-panel uk-panel-box" > 
            <div class="uk-panel-teaser"> 
-            <figure class="uk-overlay uk-overlay-hover "> 
-             <img class="slideset-img uk-overlay-spin" src="/images/activate_sdk/advantage_pic4_FT.jpg" /> 
+            <figure class="uk-overlay"> 
+             <img  src="/images/activate_sdk/advantage_pic4_FT.jpg" /> 
              <figcaption class="uk-overlay-panel uk-overlay-bottom uk-overlay-background uk-ignore owl-title"> 
               <h4><span> 低成本</span> </h4> 
              </figcaption> 
@@ -194,11 +172,11 @@ jQuery(function($){
            </div> 
           </div> 
          </div> 
-         <div class="uk-width-medium-1-2" data-uk-filter="" data-grid-prepared="true" style="position: absolute; box-sizing: border-box; top: 244.141px; left: 417.5px; opacity: 1;"> 
-          <div class="uk-panel uk-panel-box" data-uk-scrollspy="{cls:'uk-animation-scale-up', delay:400}"> 
+         <div class="uk-width-medium-1-2"> 
+          <div class="uk-panel uk-panel-box" "> 
            <div class="uk-panel-teaser"> 
-            <figure class="uk-overlay uk-overlay-hover "> 
-             <img class="slideset-img uk-overlay-spin" src="/images/activate_sdk/advantage_pic5_FT.jpg" /> 
+            <figure class="uk-overlay"> 
+             <img  src="/images/activate_sdk/advantage_pic5_FT.jpg" /> 
              <figcaption class="uk-overlay-panel uk-overlay-bottom uk-overlay-background uk-ignore owl-title"> 
               <h4><span> 高准确率</span> </h4> 
              </figcaption> 
@@ -209,158 +187,6 @@ jQuery(function($){
            </div> 
           </div> 
          </div> 
-         <!--div class="uk-width-medium-1-3" data-uk-filter="" data-grid-prepared="true" style="position: absolute; box-sizing: border-box; top: 224.672px; left: 359.984px; opacity: 1;">
-        <div class="uk-panel uk-panel-box" data-uk-scrollspy="{cls:&#39;uk-animation-scale-up&#39;, delay:400}">
-                    <div class="uk-panel-teaser">
-                <figure class="uk-overlay uk-overlay-hover ">
-                                            <img class="slideset-img uk-overlay-spin" src="/images/activate_sdk/advantage_pic2_FT.jpg">
-                                            
-                    <figcaption class="uk-overlay-panel uk-overlay-bottom uk-overlay-background uk-ignore owl-title">
-                        <h4><span>                          准确与稳定</span>
-                        </h4>
-                    </figcaption>               
-                            
-                </figure>
-            </div>
-                
-                <div class="introtext">
-            <p>即便是在角度过大的姿势与不同表情的状况下，我们的唤醒激活SDK器仍能自动找出脸上的关键位置。
-</p>        </div>
-                
-        </div>
-    </div>
-        <div class="uk-width-medium-1-3" data-uk-filter="" data-grid-prepared="true" style="position: absolute; box-sizing: border-box; top: 224.672px; left: 719.968px; opacity: 1;">
-        <div class="uk-panel uk-panel-box" data-uk-scrollspy="{cls:&#39;uk-animation-scale-up&#39;, delay:400}">
-                    <div class="uk-panel-teaser">
-                <figure class="uk-overlay uk-overlay-hover ">
-                                            <img class="slideset-img uk-overlay-spin" src="/images/activate_sdk/advantage_pic6_FT.jpg">
-                                            
-                    <figcaption class="uk-overlay-panel uk-overlay-bottom uk-overlay-background uk-ignore owl-title">
-                        <h4><span>                          光线容许</span>
-                        </h4>
-                    </figcaption>               
-                            
-                </figure>
-            </div>
-                
-                <div class="introtext">
-            <p>即使处在低光源(小于40流明)的环境下，我们的追踪技术仍能运作良好，因此能应用的层面更加广泛。</p>      </div>
-                
-        </div>
-    </div!--> 
-        </div> 
-        <p></p> 
-        <p>&nbsp;</p> 
-        <hr /> 
-        <p>&nbsp;</p> 
-        <h2><span style="color: #474747; font-family: Roboto; font-size: 36px; line-height: 36px;">特色</span></h2> 
-        <p>&nbsp;</p> 
-        <div class="uk-grid" data-uk-grid-margin=""> 
-         <div class="uk-width-medium-1-2 uk-row-first"> 
-          <dl class="uk-description-list uk-description-list-line"> 
-           <dt> 
-            <h2><span style="color: #474747; font-family: Roboto; font-size: 22px; line-height: 16px;">2D与3D的瞳孔坐标</span></h2> 
-           </dt> 
-           <dd>
-            <span style="color: #707070; font-family: Roboto; font-size: 16px; line-height: 16px;">ULSee唤醒激活SDK技术能轻易的找到人的瞳孔并显示出确切的位置。</span>
-           </dd> 
-           <dt> 
-            <h2><span style="color: #474747; font-family: Roboto; font-size: 22px; line-height: 16px;">3D的视线方向</span></h2> 
-           </dt> 
-           <dd>
-            <span style="color: #707070; font-family: Roboto; font-size: 16px; line-height: 16px;">根据头部的姿势综合数据估算出眼睛的视线方向。</span>
-           </dd> 
-           <dt> 
-            <h2><span style="color: #474747; font-family: Roboto; font-size: 22px; line-height: 16px;">2D与3D的66个脸部关键点</span></h2> 
-           </dt> 
-           <dd>
-            <span style="color: #707070; font-family: Roboto; font-size: 16px; line-height: 16px;">呈现出动态的脸部关键点，并构成脸型与特征。</span>
-           </dd> 
-          </dl> 
-         </div> 
-         <div class="uk-width-medium-1-2"> 
-          <dl class="uk-description-list uk-description-list-line"> 
-           <dt> 
-            <h2><span style="color: #474747; font-family: Roboto; font-size: 22px; line-height: 16px;">头部姿势、点头、摇头与偏转角度</span></h2> 
-           </dt> 
-           <dd>
-            <span style="color: #707070; font-family: Roboto; font-size: 16px; line-height: 16px;">个别显示出三种转向角度的信息，点头(Pitch)：绕着两耳间联机的轴转动。偏转(Roll)：绕着鼻头与后脑勺联机转动。与摇头(Yaw)：绕着头部垂直中线转动。</span>
-           </dd> 
-           <dt> 
-            <h2><span style="color: #474747; font-family: Roboto; font-size: 22px; line-height: 16px;">脸部特征点的信心数值</span></h2> 
-           </dt> 
-           <dd>
-            <span style="color: #707070; font-family: Roboto; font-size: 16px; line-height: 16px;">ULSee臉部追蹤技術提供每个特征点的追踪信心数值，并持续评估该点的健康状况。</span>
-           </dd> 
-           <dt> 
-            <h2><span style="color: #474747; font-family: Roboto; font-size: 22px; line-height: 16px;">多人追踪</span></h2> 
-           </dt> 
-           <dd>
-            <span style="color: #707070; font-family: Roboto; font-size: 16px; line-height: 16px;">提供有效且易开发的多人追踪解决方案。</span>
-           </dd> 
-          </dl> 
-         </div> 
-        </div> 
-        <p>&nbsp;</p> 
-        <hr /> 
-        <p>&nbsp;</p> 
-        <h2><span style="color: #474747; font-family: Roboto; font-size: 28px; line-height: 36px;">支援平台</span></h2> 
-        <p>&nbsp;</p> 
-        <div class="uk-grid uk-text-center" data-uk-grid-margin=""> 
-         <div class="uk-width-medium-1-3 uk-row-first"> 
-          <div class="uk-grid uk-text-center" data-uk-grid-margin=""> 
-           <div class="uk-width-medium-1-3 uk-row-first"> 
-            <div class="uk-panel" data-uk-scrollspy="{cls:'uk-animation-scale-up', delay: 400}">
-             <img title="iOS" src="/images/activate_sdk/ico_iOS.jpg" alt="" width="251" height="101" />
-            </div> 
-           </div> 
-           <div class="uk-width-medium-1-3"> 
-            <div class="uk-panel" data-uk-scrollspy="{cls:'uk-animation-scale-up', delay: 400}">
-             <img title="android" src="/images/activate_sdk/ico_android.jpg" alt="" width="251" height="101" />
-            </div> 
-           </div> 
-          </div> 
-         </div> 
-         <div class="uk-width-medium-1-3"> 
-          <div class="uk-grid uk-text-center" data-uk-grid-margin=""> 
-           <div class="uk-width-medium-1-4 uk-row-first"> 
-            <div class="uk-panel" data-uk-scrollspy="{cls:'uk-animation-scale-up', delay: 400}">
-             <img title="mac" src="/images/activate_sdk/ico_mac.jpg" alt="" width="151" height="101" />
-            </div> 
-           </div> 
-           <div class="uk-width-medium-1-4"> 
-            <div class="uk-panel" data-uk-scrollspy="{cls:'uk-animation-scale-up', delay: 400}">
-             <img title="windows" src="/images/activate_sdk/ico_windows.jpg" alt="" width="150" height="101" />
-            </div> 
-           </div> 
-           <div class="uk-width-medium-1-4"> 
-            <div class="uk-panel" data-uk-scrollspy="{cls:'uk-animation-scale-up', delay: 400}">
-             <img title="linux" src="/images/activate_sdk/ico_linux.jpg" alt="" width="151" height="101" />
-            </div> 
-           </div> 
-          </div> 
-         </div> 
-         <div class="uk-width-medium-1-3"> 
-          <div class="uk-grid uk-text-center" data-uk-grid-margin=""> 
-           <div class="uk-width-medium-1-4 uk-row-first"> 
-            <div class="uk-panel" data-uk-scrollspy="{cls:'uk-animation-scale-up', delay: 400}">
-             <img title="chrome" src="/images/activate_sdk/ico_chrome.jpg" alt="" width="151" height="101" />
-            </div> 
-           </div> 
-           <div class="uk-width-medium-1-4"> 
-            <div class="uk-panel" data-uk-scrollspy="{cls:'uk-animation-scale-up', delay: 400}">
-             <img title="firefox" src="/images/activate_sdk/ico_firefox.jpg" alt="" width="150" height="101" />
-            </div> 
-           </div> 
-           <div class="uk-width-medium-1-4"> 
-            <div class="uk-panel" data-uk-scrollspy="{cls:'uk-animation-scale-up', delay: 400}">
-             <img title="safari" src="/images/activate_sdk/ico_safari.jpg" alt="" width="150" height="101" />
-            </div> 
-           </div> 
-          </div> 
-         </div> 
-        </div> 
-        <p style="padding-left: 30px;">&nbsp;</p> 
        </article> 
       </main> 
      </div> 
@@ -368,16 +194,13 @@ jQuery(function($){
    </div> 
   </div> 
   <footer id="tm-footer" class="tm-footer"> 
-   <div class="uk-container uk-container-center"> 
-    <a class="tm-totop-scroller" data-uk-smooth-scroll="" href="#"></a> 
-    <div class="uk-panel"> 
-     <div class="uk-margin">
-      <img src="/images/all_img_logo_ulsee.png" alt="" width="110" />
+     <div class="uk-panel"> 
+      <div class="uk-margin"> 
+       <img src="/images/logo_white.png" alt="" width="110" /> 
+      </div> 
+      <p>版权所有 &copy; 2018 蛙声科技 Inc.</p> 
      </div> 
-     <p>版权所有 &copy; 2017 ULSee Inc.</p>
-    </div> 
-   </div> 
-  </footer> 
+    </footer>  
   <div id="offcanvas" class="uk-offcanvas"> 
    <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
     <ul class="uk-nav uk-nav-offcanvas">

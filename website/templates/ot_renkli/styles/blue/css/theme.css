@@ -248,8 +248,8 @@ h4,
 }
 h5,
 .uk-h5 {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 30px;
 }
 h6,
 .uk-h6 {
@@ -9910,7 +9910,7 @@ html {
  * Feature-a
  */
 #tm-feature-a {
-  background-image: url("../../../images/bg-3.jpg");
+  background-image: url("../../../images/bg-3G.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   padding: 100px 0;
