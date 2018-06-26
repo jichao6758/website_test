@@ -243,8 +243,8 @@ h3,
 }
 h4,
 .uk-h4 {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 28px;
+  line-height: 23px;
 }
 h5,
 .uk-h5 {
@@ -253,8 +253,8 @@ h5,
 }
 h6,
 .uk-h6 {
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 18px;
+  line-height: 32px;
 }
 /* Lists
  ========================================================================== */
@@ -7811,7 +7811,7 @@ a.uk-thumbnail:focus {
   color: #ffffff !important;
 }
 .uk-text-secondary {
-  color: #00c7d6;
+  color: #333333;
 }
 /* ========================================================================
    Component: Utility
